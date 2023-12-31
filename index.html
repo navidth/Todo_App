@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+</head>
+<body id="body" class="bg-desktop-dark">
+  <div class="text-center header d-flex flex-column pos-top">
+    <!------------------------------ header -------------------->
+    <div class="clearfix">
+      <h1 class="h1 float-start font-h1 text-light">TODO</h1>
+      <i class="bi bi-sun float-end corsure-pointed" style="color: white;" id="mode" onclick="changeMode()"></i>
+    </div>
+    <!----------------------------- write app------------------- -->
+    <div class="d-flex flex-column my-4">
+      <div class="d-flex bg-dark-subtle rounded-2 px-3 py-2">
+          <div class="d-flex align-items-center">
+                  <i class="bi bi-plus-lg corsure-pointed" 
+                  onclick="addTodo()" id="add-todo"> </i>
+          </div>
+          <input type="text" name="text" id="text" class=" border border-0 ms-3 bg-dark-subtle" placeholder="Create a new todo...">
+      </div>
+      <!-----------------------todo available--------------------------------->
+      <div class="todo-app mt-5">
+        <ul class="list-group text-start" id="save-todo">
+        <li class="d-flex justify-content-between list-group-item py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+            <span class="corsure-pointed todo-writed ms-2 "> Compelete learning Html && Css</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <li class=" list-group-item d-flex justify-content-between py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+          <span class="corsure-pointed todo-writed ms-2"> Compelete learning Javascript</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <li class=" list-group-item d-flex justify-content-between py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+          <span class="corsure-pointed todo-writed ms-2"> Compelete learning React</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <li class=" list-group-item d-flex justify-content-between py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+          <span class="corsure-pointed todo-writed ms-2"> Compelete learning Django</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <li class=" list-group-item d-flex justify-content-between py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+          <span class="corsure-pointed todo-writed ms-2"> Compelete learning PHP</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <li class=" list-group-item d-flex justify-content-between py-3 border-start-0 border-end-0">
+          <div class="div1">
+            <i class="bi bi-circle corsure-pointed me-3">
+          <span class="corsure-pointed todo-writed ms-2"> Compelete learning Database</span></i></div>
+          <button type="button"id="delete-btn" class="btn-close float-end" ></button>
+        </li>
+        <!----------------------footer todo list---------------------->
+        <li class="py-3 px-2 border-0 bg-dark d-flex justify-content-between align-items-baseline" id="footer-todo">
+          <span class="fs-mini " id="counter">
+            <a class="changer ms-4 fs-mini text-decoration-none ">  
+          sss</a>
+        </span>
+          <span class="d-block">
+              <a class="changer corsure-pointed ms-4 fs-mini text-decoration-none " id="select-all">  
+              All Completed</a>
+           </span>
+           <span class="fs-mini">
+            <a class="changer  corsure-pointed ms-4 fs-mini text-decoration-none " id="delete-all">  
+              Close Completed</a>
+           </span>
+        </li>
+      </div>
+      <a class=" changer fs-mini mt-3 corsure-pointed">  Drag and drop to reorder list</a>
+    </div>
+  </div>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+</html>
